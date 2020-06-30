@@ -1,0 +1,73 @@
+<!-- <html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>weather Analysis</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/results.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-fixed-top mb-3">
+    <div class="container">
+      <a class="navbar-brand" href="/"><i class="fas fa-cloud"></i> Weather</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">HOME<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">NEWS</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">TOP STORIES</a>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="mr-3">
+            <button type="button" name="Sign Up"class="btn btn-primary mr-2"><i class="fas fa-user-plus"></i> Sign Up</button>
+            <button type="button" name="Sign Up"class="btn btn-primary mr-2"><i class="fas fa-sign-in-alt"></i> Log In</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav> -->
+  <%- include("partials/header"); -%>
+  <link rel="stylesheet" href="/css/results.css">
+  <link rel="stylesheet" href="css/weather.css">
+</head>
+<body>
+  <div class="card" style="width: 23rem;">
+    <p class="display-4" id="location"><%= location %></p>
+    <img src="https://img.icons8.com/ios/50/000000/partly-cloudy-day.png" class="card-img-top" alt="error occured">
+
+
+
+
+    <div class="card-body">
+      <p class="card-text display-4"><strong><%= tempToday %></strong><span>&#8451;</span></p>
+    </div>
+      <div class="others">
+        <div class="row">
+          <div class="col-4">
+            <span>
+              <h4 id="min" class="lowerSegment"><%= minTemp %><span>&#8451;</span></h4>
+              <label for="min">Min Temp.</label>
+            </span>
+          </div>
+          <div class="col-4 d-flex align-items-center justify-content-center">
+            <h3 class="lowerSegment"><%= atmos %></h3>
+          </div>
+          <div class="col-4">
+            <span>
+              <h4 id="max" class="lowerSegment"><%= maxTemp %><span>&#8451;</span></h4>
+              <label for="max">Max Temp.</label>
+            </span>
+          </div>
+        </div>
+      </div>
+    <!-- </div> -->
+  </div>
+<%- include("partials/footer"); -%>

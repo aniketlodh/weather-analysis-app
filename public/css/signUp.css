@@ -1,0 +1,29 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  background-image: url("https://images.unsplash.com/photo-1582485565167-75055e5e6b5b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  font-family: 'Roboto', sans-serif;
+}
+
+html,body{
+  height: 100%;
+  width: 100%;
+
+}
+.bg-image{
+}
+
+.card{
+  display: inline-block;
+  padding: 25px 50px 20px 50px;
+  border-radius: 15px;
+  margin-top: 8%;
+  margin-left: 27%;
+}
+.form-check,#signup{
+  margin-top: 10px;
+}

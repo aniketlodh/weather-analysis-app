@@ -1,0 +1,37 @@
+.card{
+  background-color: white;
+  padding: 12px;
+  display: inline-block;
+  margin-top: 3%;
+  border-radius: 20px;
+  box-shadow: 10px 10px 5px black;
+}
+.card img{
+  height: 7rem;
+  width:7rem;
+}
+/* html,body{
+  width:100%;
+} */
+.others{
+  background-color: black;
+  color: white;
+  padding: 10px;
+  margin: 0;
+  border-radius: 20px;
+  border-right: 8px solid white;
+
+}
+.min, .max, #location{
+  overflow: hidden;
+  white-space: nowrap;
+}
+.lowerSegment{
+  font-size: 1.3rem;
+}
+#location{
+
+  padding-top: 3px;
+
+}
+/* rgb(200,200,200) */
